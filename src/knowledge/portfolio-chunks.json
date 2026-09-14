@@ -1,0 +1,395 @@
+[
+  {
+    "id": "about",
+    "section": "about",
+    "title": "About Mehul Joshi",
+    "content": "01 / ABOUT ME, I was born in July 1995. More than just writing code. I started my career in 2016. Today I design, build and lead production systems. I'm Mehul Joshi, a Senior Full Stack Engineer and Technical Lead with 10 years of experience building SaaS products, enterprise applications and mobile platforms. My engineering journey has evolved from backend development to full-stack engineering, system architecture, performance optimization, cloud infrastructure and technical leadership. I enjoy solving difficult engineering problems — especially when scalability, performance, maintainability and reliability matter.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "profile"
+    }
+  },
+  {
+    "id": "skill-frontend-engineering",
+    "section": "skills",
+    "title": "Frontend Engineering",
+    "content": "Frontend Engineering: Building responsive, scalable and maintainable interfaces for complex business applications. React, Next.js, Angular, Redux, TypeScript.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "skill",
+      "technologies": [
+        "React",
+        "Next.js",
+        "Angular",
+        "Redux",
+        "TypeScript"
+      ]
+    }
+  },
+  {
+    "id": "skill-backend-engineering",
+    "section": "skills",
+    "title": "Backend Engineering",
+    "content": "Backend Engineering: Designing reliable APIs, services and backend architectures capable of handling demanding workloads. Node.js, Express, REST, Laravel, Microservices.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "skill",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "REST",
+        "Laravel",
+        "Microservices"
+      ]
+    }
+  },
+  {
+    "id": "skill-data-databases",
+    "section": "skills",
+    "title": "Data & Databases",
+    "content": "Data & Databases: Database design, query optimization, indexing, caching and high-performance data access. MySQL, MongoDB, PostgreSQL.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "skill",
+      "technologies": [
+        "MySQL",
+        "MongoDB",
+        "PostgreSQL"
+      ]
+    }
+  },
+  {
+    "id": "skill-cloud-devops",
+    "section": "skills",
+    "title": "Cloud & DevOps",
+    "content": "Cloud & DevOps: Building deployment workflows and production infrastructure with modern cloud tooling. AWS, EC2, ECS, S3, Docker, CI/CD.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "skill",
+      "technologies": [
+        "AWS",
+        "EC2",
+        "ECS",
+        "S3",
+        "Docker",
+        "CI/CD"
+      ]
+    }
+  },
+  {
+    "id": "skill-mobile-engineering",
+    "section": "skills",
+    "title": "Mobile Engineering",
+    "content": "Mobile Engineering: Developing cross-platform mobile applications and integrating them with scalable backend services. React Native, REST APIs.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "skill",
+      "technologies": [
+        "React Native",
+        "REST APIs"
+      ]
+    }
+  },
+  {
+    "id": "skill-ai-assisted-engineering",
+    "section": "skills",
+    "title": "AI-Assisted Engineering",
+    "content": "AI-Assisted Engineering: Using modern AI tools to accelerate development, automation, debugging and engineering productivity. Copilot, ChatGPT, Codex, Gemini, Cursor.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "skill",
+      "technologies": [
+        "Copilot",
+        "ChatGPT",
+        "Codex",
+        "Gemini",
+        "Cursor"
+      ]
+    }
+  },
+  {
+    "id": "journey-2016-the-beginning",
+    "section": "journey",
+    "title": "2016 — The Beginning",
+    "content": "2016, The Beginning: Started my professional software engineering journey as a PHP Developer. Built web applications, worked with MySQL and learned the fundamentals of real-world software development.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "career-journey"
+    }
+  },
+  {
+    "id": "journey-2018-becoming-full-stack",
+    "section": "journey",
+    "title": "2018 — Becoming Full Stack",
+    "content": "2018, Becoming Full Stack: Expanded into Laravel, React, Angular, WordPress, REST APIs, payment gateways and third-party integrations while building commercial products.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "career-journey"
+    }
+  },
+  {
+    "id": "journey-2020-product-engineering",
+    "section": "journey",
+    "title": "2020 — Product Engineering",
+    "content": "2020, Product Engineering: Started thinking beyond individual features. Focus shifted toward architecture, maintainability, performance and complete product ownership.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "career-journey"
+    }
+  },
+  {
+    "id": "journey-2022-enterprise-engineering",
+    "section": "journey",
+    "title": "2022 — Enterprise Engineering",
+    "content": "2022, Enterprise Engineering: Joined RyDOT Infotech as a Senior Software Engineer. Built web and mobile platforms using React, Angular, React Native, Node.js and Express.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "career-journey"
+    }
+  },
+  {
+    "id": "journey-2023-2025-scale-architecture",
+    "section": "journey",
+    "title": "2023-2025 — Scale & Architecture",
+    "content": "2023-2025, Scale & Architecture: Worked on enterprise systems handling 200K+ daily requests and 15K+ active users. Focused heavily on database optimization, caching, API performance and microservices.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "career-journey"
+    }
+  },
+  {
+    "id": "journey-2023-2025-leadership",
+    "section": "journey",
+    "title": "2023-2025 — Leadership",
+    "content": "2023-2025, Leadership: Progressed into Senior Engineer and Team Lead responsibilities, mentoring developers, reviewing architecture and helping teams deliver production software.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "career-journey"
+    }
+  },
+  {
+    "id": "journey-2026-engineering-ai",
+    "section": "journey",
+    "title": "2026 — Engineering + AI",
+    "content": "2026, Engineering + AI: Currently focused on scalable architecture, engineering leadership, automation and AI-powered development workflows — including building an AI-powered Jira automation agent.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "career-journey"
+    }
+  },
+  {
+    "id": "experience-ulora-technologies",
+    "section": "experience",
+    "title": "Ulora Technologies",
+    "content": "NOV 2025 — JUL 2026 ULORA TECHNOLOGIES, Senior Software Engineer / Team Lead. Led a team of 3 engineers, coordinated project execution, performed code reviews, managed Agile workflows and designed CI/CD pipelines. Also developed an AI-powered Jira automation agent to reduce repetitive project-management work.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "experience",
+      "company": "Ulora Technologies",
+      "role": "Senior Software Engineer / Team Lead",
+      "period": "NOV 2025 — JUL 2026",
+      "technologies": [
+        "Leadership",
+        "Node.js",
+        "Express.js",
+        "React.js",
+        "AI Automation",
+        "CI/CD",
+        "Jenkins",
+        "Jira"
+      ]
+    }
+  },
+  {
+    "id": "experience-rydot-infotech",
+    "section": "experience",
+    "title": "RyDOT Infotech",
+    "content": "MAR 2022 — OCT 2025 RYDOT INFOTECH, Senior Software Engineer / Team Lead. Designed and developed scalable web and mobile applications. Worked across React, Angular, React Native, Node.js and Express while owning complete software development lifecycles. Led engineering initiatives around performance, microservices, production reliability and developer mentoring.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "experience",
+      "company": "RyDOT Infotech",
+      "role": "Senior Software Engineer / Team Lead",
+      "period": "MAR 2022 — OCT 2025",
+      "technologies": [
+        "Leadership",
+        "React.js",
+        "Angular",
+        "Next.js",
+        "React Native",
+        "Node.js",
+        "Express.js",
+        "Microservices",
+        "Architecture",
+        "Monolithic Architecture",
+        "AWS",
+        "Jira",
+        "AI Tools"
+      ]
+    }
+  },
+  {
+    "id": "experience-repute-infosystems",
+    "section": "experience",
+    "title": "Repute Infosystems",
+    "content": "JAN 2018 — MAR 2022 REPUTE INFOSYSTEMS, Full Stack Developer. Built commercial WordPress products and full-stack applications using Laravel, React, Angular and MySQL. Worked on Sociamonials, ARForms, ARMember and ARPrice, including payment integrations, authentication, membership systems and social-media automation.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "experience",
+      "company": "Repute Infosystems",
+      "role": "Full Stack Developer",
+      "period": "JAN 2018 — MAR 2022",
+      "technologies": [
+        "WordPress",
+        "PHP",
+        "Laravel",
+        "React",
+        "Angular",
+        "MySQL"
+      ]
+    }
+  },
+  {
+    "id": "experience-binarybits",
+    "section": "experience",
+    "title": "BinaryBits",
+    "content": "JUN 2016 — OCT 2017 BINARYBITS, PHP Developer. Began my professional software engineering career. Developed PHP applications, automated data extraction tools and MySQL-based systems.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "experience",
+      "company": "BinaryBits",
+      "role": "PHP Developer",
+      "period": "JUN 2016 — OCT 2017",
+      "technologies": [
+        "PHP",
+        "JavaScript",
+        "MySQL",
+        "Web Development"
+      ]
+    }
+  },
+  {
+    "id": "project-courier-erp",
+    "section": "projects",
+    "title": "Courier ERP",
+    "content": "PROJECT / 01 Courier ERP: Enterprise logistics platform supporting courier booking, tracking, delivery operations, reporting and real-time data synchronization. Impact: 200K+ requests/day.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "project",
+      "technologies": [
+        "Angular",
+        "Node.js",
+        "Express.js",
+        "Electron",
+        "MongoDB",
+        "PostgreSQL",
+        "FCM",
+        "Redis",
+        "Microservices"
+      ],
+      "impact": "200K+ requests/day"
+    }
+  },
+  {
+    "id": "project-radiant",
+    "section": "projects",
+    "title": "Radiant",
+    "content": "PROJECT / 02 Radiant: Real-time solar monitoring platform for collecting, processing and visualizing energy-generation data through dashboards and APIs.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "project",
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MQTT",
+        "REST APIs",
+        "MongoDB"
+      ],
+      "impact": "Real-time monitoring"
+    }
+  },
+  {
+    "id": "project-digital-walls",
+    "section": "projects",
+    "title": "Digital Walls",
+    "content": "PROJECT / 03 Digital Walls: Digital signage platform for managing dynamic content distribution, scheduling, campaigns, screen updates and analytics.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "project",
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "MongoDB"
+      ],
+      "impact": "Scalable content delivery"
+    }
+  },
+  {
+    "id": "project-sociamonials",
+    "section": "projects",
+    "title": "Sociamonials",
+    "content": "PROJECT / 04 Sociamonials: Social-media management platform supporting content scheduling, campaign management, analytics, media management and automated publishing workflows.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "project",
+      "technologies": [
+        "Laravel",
+        "React",
+        "MySQL",
+        "REST APIs"
+      ],
+      "impact": "Automation & integrations"
+    }
+  },
+  {
+    "id": "project-ai-jira-automation-agent",
+    "section": "projects",
+    "title": "AI Jira Automation Agent",
+    "content": "PROJECT / 05 AI Jira Automation Agent: AI-powered engineering automation designed to reduce repetitive Jira project-management tasks and improve team productivity.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "project",
+      "technologies": [
+        "AI",
+        "Jira",
+        "Automation",
+        "Node.js",
+        "REST APIs"
+      ],
+      "impact": "AI + Developer Productivity"
+    }
+  },
+  {
+    "id": "architecture",
+    "section": "architecture",
+    "title": "How I Think About Architecture",
+    "content": "06 / HOW I THINK, From feature to system. My approach has evolved from writing individual features to thinking about complete systems.",
+    "metadata": {
+      "source": "portfolio",
+      "type": "architecture"
+    }
+  },
+  {
+    "id": "ai-engineering",
+    "section": "ai-engineering",
+    "title": "AI Engineering",
+    "content": "07 / AI ENGINEERING, I don't use AI to replace engineering. I use AI to amplify it. AI-assisted development has become part of my engineering workflow — from architecture exploration and code generation to debugging, testing, documentation and automation. → GitHub Copilot — development acceleration → ChatGPT / Codex — reasoning, engineering assistance and development → Gemini Code Assist — code analysis and development → Cursor AI — AI-native development workflow",
+    "metadata": {
+      "source": "portfolio",
+      "type": "ai-engineering"
+    }
+  },
+  {
+    "id": "contact",
+    "section": "contact",
+    "title": "Contact",
+    "content": "08 / LET'S CONNECT, Have an interesting problem to solve? Whether you're building a SaaS product, scaling an existing platform, solving a difficult engineering problem, or looking for a senior engineer to join your team — let's talk. joshimehul1995@gmail.com +91-8128753696",
+    "metadata": {
+      "source": "portfolio",
+      "type": "contact"
+    }
+  }
+]

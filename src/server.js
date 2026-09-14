@@ -6,6 +6,9 @@ const rateLimit = require("express-rate-limit");
 const fs = require("fs");
 const path = require("path");
 const { GoogleGenAI } = require("@google/genai");
+const { Pinecone } = require("@pinecone-database/pinecone");
+const { buildContext } = require("./utils/contextBuilder");
+const { buildRagPrompt } = require("./utils/ragPrompt");
 // const OpenAI = require("openai");
 
 const app = express();
@@ -52,6 +55,13 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY
 });
 
+const pinecone = new Pinecone({
+  apiKey: process.env.PINECONE_API_KEY
+});
+
+const EMBEDDING_MODEL = "gemini-embedding-001";
+const EMBEDDING_DIMENSION = 768;
+
 // Load portfolio knowledge
 const knowledgePath = path.join(
   __dirname,
@@ -70,6 +80,21 @@ const knowledgeContext = portfolioKnowledge
   })
   .join("\n\n");
 
+
+async function generateQueryEmbedding(query) {
+  const response = await ai.models.embedContent({
+    model: EMBEDDING_MODEL,
+    contents: query,
+
+    config: {
+      taskType: "RETRIEVAL_QUERY",
+      outputDimensionality: EMBEDDING_DIMENSION
+    }
+  });
+
+  return response.embeddings[0].values;
+}
+
 app.get("/api/health", (req, res) => {
   res.json({
     success: true,
@@ -78,6 +103,7 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+// without embedding, Vector DB, RAG Pipeline
 app.post("/api/chat", chatRateLimiter, async (req, res) => {
   try {
     const { message } = req.body || req.query;
@@ -89,19 +115,16 @@ app.post("/api/chat", chatRateLimiter, async (req, res) => {
       });
     }
 
-    const trimmedMessage = message.trim();
+    const queryMessage = message.trim();
 
-    if (trimmedMessage.length > 1000) {
+    if (queryMessage.length > 1000) {
       return res.status(400).json({
         success: false,
         message: "Message is too long",
       });
     }
 
-    const response = await ai.models.generateContent({
-      model: "gemini-3.6-flash",
-      config: {
-        systemInstruction: `
+    const instructionText = `
         You are an AI assistant for Mehul Joshi's professional portfolio.
 
         Your role is to help visitors understand Mehul's:
@@ -128,8 +151,14 @@ app.post("/api/chat", chatRateLimiter, async (req, res) => {
         PORTFOLIO KNOWLEDGE:
 
         ${knowledgeContext}
-      `},
-      contents: trimmedMessage
+      `;
+
+    const response = await ai.models.generateContent({
+      model: "gemini-3.6-flash",
+      config: {
+        systemInstruction: instructionText
+      },
+      contents: queryMessage
     });
 
 
@@ -147,6 +176,74 @@ app.post("/api/chat", chatRateLimiter, async (req, res) => {
     res.status(500).json({
       success: false,
       message: error.message || "Failed to generate AI response"
+    });
+  }
+});
+
+// with embedding, Vector DB, RAG Pipeline
+app.post("/api/chat2", chatRateLimiter, async (req, res) => {
+  try {
+    const { message } = req.body || req.query;
+
+    if (!message || typeof message !== "string" || !message.trim()) {
+      return res.status(400).json({
+        success: false,
+        message: "Message is required"
+      });
+    }
+
+    const queryMessage = message.trim();
+
+    if (queryMessage.length > 1000) {
+      return res.status(400).json({
+        success: false,
+        message: "Message is too long",
+      });
+    }
+
+    // STEP 1: Generate query embedding
+    const queryEmbedding =
+        await generateQueryEmbedding(queryMessage);
+
+    // STEP 2: Search Pinecone
+    const indexName =
+        process.env.PINECONE_INDEX_NAME;
+
+    const index = pinecone.index(indexName);
+
+    const searchResponse = await index.query({
+      vector: queryEmbedding,
+      topK: 3,
+      includeMetadata: true
+    });
+
+    // STEP 3: Build context
+    const context =
+        buildContext(searchResponse.matches);
+
+    // STEP 4: Build RAG prompt
+    const prompt =
+        buildRagPrompt(queryMessage, context);
+
+    const response = await ai.models.generateContent({
+      model: "gemini-3.6-flash",
+      contents: prompt
+    });
+
+    res.json({
+      success: true,
+      reply: response.text
+    });
+
+  } catch (error) {
+    console.error("Gemini API Error:", error);
+    console.error("Error message:", error.message);
+    console.error("Error status:", error.status);
+    console.error("Error details:", error.error);
+
+    res.status(500).json({
+      success: false,
+      message: "Failed to generate AI response"
     });
   }
 });
