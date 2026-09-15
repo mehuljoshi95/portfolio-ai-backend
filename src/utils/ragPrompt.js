@@ -25,6 +25,7 @@ function buildRagPrompt(query, context) {
 
 PORTFOLIO CONTEXT:
 ------------------
+Resume/CV downloadable link: https://mehuljoshi95.github.io/uploads/MEHUL-JOSHI-FULLSTACK-ENGINEER-RESUME.pdf
 ${context}
 ------------------
 

@@ -149,7 +149,7 @@ app.post("/api/chat", chatRateLimiter, async (req, res) => {
         8. Do not mention that you are reading a JSON file.
         
         PORTFOLIO KNOWLEDGE:
-
+        Resume/CV link: https://mehuljoshi95.github.io/uploads/MEHUL-JOSHI-FULLSTACK-ENGINEER-RESUME.pdf
         ${knowledgeContext}
       `;
 
